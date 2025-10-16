@@ -1,0 +1,41 @@
+/* Import Google Fonts first */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Tailwind directives */
+
+@tailwind utilities;
+
+/* Base layer customization */
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Components layer */
+@layer components {
+  .section-padding {
+    @apply px-6 py-16 md:px-12 lg:px-24;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105;
+  }
+}
+
+
+@import "tailwindcss";
+
+
+
+
+
